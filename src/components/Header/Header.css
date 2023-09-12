@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap');
+.nav__link{
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+}
+
+.header_left{
+    display: flex;
+    flex: 0.4;
+}
+
+.header_left >img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px 10px;
+    margin-left: 70px;
+    margin-right: 5px;
+}
+
+.header_left > h1{
+    text-align: center;
+    font-family: Arial,  sans-serif;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.header_left > h1 > span{
+    color: orangered;
+    padding-top: 10px;
+}
+
+.header_right{
+    display: flex;
+    flex: 0.6;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header_right > a > h4{
+    font-size: 28px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    font-family: "Crimson Text", serif;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.header_right > a > h4:hover{
+    
+    background-color: #f64c08;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-family: "Crimson Text", serif;
+    font-style: 18px;
+    cursor: pointer;
+}
+
+.header2{
+    background-color: #f64c08;
+    color: #fff;
+ 
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    padding: 2px 3px;
+    font-size: 30px;
+}
+
+.header2:hover{
+    background-color: none;
+    margin: 0;
+    padding: 0;
+    color:lavenderblush;
+}
+
+.header-right-select{
+    display: none;
+    margin-left: 100px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.header-right-select>option{
+    color:#000000;
+    background-color: aqua;
+}
+
+
+@media screen and (max-width: 576px){
+    .header_left > h1{
+        font-size: 20px;
+    }
+    
+    .header_right{
+        display: none;
+    }
+    .header-right-select{
+        display: flex;
+    }
+    
+}
